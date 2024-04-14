@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="./normlize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container container--outer">
+      <div class="container container--form container--border">
+        <form action="#" onsubmit="">
+          <div class="input--container">
+            <div class="container container--label">
+              <label>Enter gross annual income </label>
+              <span class="container container--border container--icon"
+                >?
+                <div class="information information--fixed-width">
+                  Gross annual Income is your total salary in a year before any
+                  deductions
+                  <span class="triangle"></span>
+                </div>
+              </span>
+            </div>
+
+            <div class="text--input--container">
+              <input
+                class="text--input font--weight-500"
+                id="gross--income"
+                type="text"
+                placeholder="Enter gross annual income"
+              />
+              <span
+                class="container container--border container--icon"
+                id="container--error-icon"
+                >!
+                <div
+                  class="information .information--nowrap"
+                  style="white-space: nowrap"
+                >
+                  Please enter positive numbers only
+                  <span class="triangle"></span>
+                </div>
+              </span>
+            </div>
+          </div>
+
+          <div class="input--container">
+            <div class="container container--label">
+              <label>Enter extra income</label>
+              <span class="container container--icon container--border"
+                >?
+                <div class="information information--fixed-width">
+                  Income from other sources like investments, Business, savings
+                  intrets ...
+                  <span class="triangle"></span>
+                </div>
+              </span>
+            </div>
+
+            <div class="text--input--container">
+              <input
+                class="text--input font--weight-500"
+                id="extra--income"
+                type="text"
+                placeholder="Enter extra income from other sources"
+              />
+              <span
+                class="container container--border container--icon"
+                id="container--error-icon"
+                >!
+                <div
+                  class="information .information--nowrap"
+                  style="white-space: nowrap"
+                >
+                  Please enter Positive numbers only
+                  <span class="triangle"></span>
+                </div>
+              </span>
+            </div>
+          </div>
+
+          <div class="input--container">
+            <div class="container container--label">
+              <label>Enter age group</label>
+              <span class="container container--border container--icon"
+                >?
+                <div class="information information--fixed-width">
+                  Select one of the age group
+                  <span class="triangle"></span>
+                </div>
+              </span>
+            </div>
+
+            <div class="text--input--container">
+              <select class="text--input select--age font--weight-500">
+                <option value="0" class="age--ranges">
+                  Select age group here
+                </option>
+                <option value="1" class="age--ranges">&lt;40</option>
+                <option value="2" class="age--ranges">&gt;=40 & &lt;60</option>
+                <option value="3" class="age--ranges">&gt;=60</option>
+              </select>
+
+              <span
+                class="container container--border container--icon"
+                id="container--error-icon"
+                >!
+                <div
+                  class="information .information--nowrap"
+                  style="white-space: nowrap"
+                >
+                  Must select one of the age group
+                  <span class="triangle"></span>
+                </div>
+              </span>
+            </div>
+          </div>
+
+          <div class="input--container">
+            <div class="container container--label">
+              <label>Enter total applicable deductions </label>
+              <span class="container container--border container--icon"
+                >?
+                <div class="information information--fixed-width">
+                  Deductions are income that can be exempted from tax
+                  <span class="triangle"></span>
+                </div>
+              </span>
+            </div>
+
+            <div class="text--input--container">
+              <input
+                class="text--input font--weight-500"
+                id="deductions"
+                type="text"
+                placeholder="Add total applicable deductions"
+              />
+              <span
+                class="container container--border container--icon"
+                id="container--error-icon"
+                >!
+                <div
+                  class="information .information--nowrap"
+                  style="white-space: nowrap"
+                >
+                  Please enter positive numbers only
+                  <span class="triangle"></span>
+                </div>
+              </span>
+            </div>
+          </div>
+
+          <button
+            class="button button--full-width button--margin-top-40"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="container container--border container--output">
+        <div class="top--content font--weight-600">
+          Your Overall income will be
+        </div>
+        <div class="tax--amount"></div>
+        <div class="bottom--content font--weight-600">after tax deductions</div>
+        <button
+          class="button button--close button--content-length button--margin-top-80"
+          type="button"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
