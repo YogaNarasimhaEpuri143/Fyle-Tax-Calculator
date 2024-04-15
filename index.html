@@ -23,7 +23,7 @@
         <form action="#" onsubmit="">
           <div class="input--container">
             <div class="container container--label">
-              <label>Enter gross annual income </label>
+              <label for="gross--income">Enter gross annual income </label>
               <span class="container container--border container--icon"
                 >?
                 <div class="information information--fixed-width">
@@ -55,7 +55,7 @@
 
           <div class="input--container">
             <div class="container container--label">
-              <label>Enter extra income</label>
+              <label for="extra--income">Enter extra income</label>
               <span class="container container--icon container--border"
                 >?
                 <div class="information information--fixed-width">
@@ -98,7 +98,10 @@
             </div>
 
             <div class="text--input--container">
-              <select class="text--input select--age font--weight-500">
+              <select
+                class="text--input select--age font--weight-500"
+                id="age-dropdown"
+              >
                 <option value="0" class="age--ranges">
                   Select age group here
                 </option>
@@ -121,7 +124,7 @@
 
           <div class="input--container">
             <div class="container container--label">
-              <label>Enter total applicable deductions </label>
+              <label for="deductions">Enter total applicable deductions </label>
               <span class="container container--border container--icon"
                 >?
                 <div class="information information--fixed-width">
