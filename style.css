@@ -175,16 +175,6 @@ select {
   font-size: 12px;
 }
 
-input[type="text"]:focus {
-  color: var(--color-secondary);
-  background-color: white;
-}
-
-input[type="text"]::selection {
-  background-color: #007bff; /* Change to your desired selection background color */
-  color: #fff; /* Change to your desired selection text color */
-}
-
 .text--input {
   outline: none;
   border: none;
